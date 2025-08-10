@@ -15,6 +15,7 @@ Images links are fetched from Blizzard's Hearthstone API and downloaded directly
 
 ### How to Use
 
+> [!IMPORTANT]
 > Calling Blizzard's API requires [setting up a client](https://develop.battle.net/documentation/guides/getting-started). This script expects a Client ID and Client Secret as input.
 
 1. Clone this repo and open it in a terminal.

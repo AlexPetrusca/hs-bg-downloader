@@ -55,6 +55,7 @@ async def download_cards(cards, prefix):
 
 
 async def fetch_cards(token, query):
+  print(f'Downloading {query} cards...')
   prefix = '/'.join(query.values())
   cards = get_battlegrounds_cards(token, query)
   await download_cards(cards, prefix)
@@ -78,7 +79,6 @@ async def fetch_all_cards(token):
   ]
 
   for query in queries:
-    print(f'Downloading {query} cards...')
     await fetch_cards(token, query)
 
 
@@ -86,5 +86,7 @@ if __name__ == '__main__':
   load_dotenv()
   token = get_bearer_token()
 
-  query = { 'bgCardType': 'spell' }
+  # query = { 'bgCardType': 'spell' }
+  # asyncio.run(fetch_query(token, query))
+
   asyncio.run(fetch_all_cards(token))

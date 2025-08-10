@@ -20,7 +20,7 @@ Images links are fetched from Blizzard's Hearthstone API and downloaded directly
 
 1. Clone this repo and open it in a terminal.
 2. Install requirements with `pip3 install -r requirements.txt`.
-3. Pass your Client ID and Client Secret to the script. Create a file named `.env` with content:
+3. Pass your Client ID and Client Secret as environment variables to the script. Create a file named `.env` with content:
 ```
 BLIZZARD_CLIENT_ID="<client_id>"
 BLIZZARD_CLIENT_SECRET="<client_secret>"
